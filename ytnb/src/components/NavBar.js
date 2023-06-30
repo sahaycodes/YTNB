@@ -1,7 +1,13 @@
-import {Navbar, Container} from "react-bootstrap";
-import {useState} from 'react';
+import {Navbar, Container,Nav} from "react-bootstrap";
+import React,  {useState} from 'react';
+import logo from './assests/YTNB.png';
 
-export const Navbar = () => {
+import { useEffect } from "react";
+
+
+
+
+export const Navbar1 = () => {
     const [activeLink, setActiveLink] = useState('home');
     const [scrolled, seScrolled]=useState(false);
 
@@ -27,7 +33,7 @@ export const Navbar = () => {
         <Navbar expand="lg" className={scrolled ?"scrolled": ""}>
             <Container>
                 <Navbar.Brand href="#home">
-                    <img src={''} alt="Logo"/>
+                    <img src={logo} alt="Logo"/>
                 </Navbar.Brand>    
                 <Navbar.Toggle aria-controls="basic-navbar-nav">
                     <span className="navbar-toggler-icon"></span>
@@ -51,6 +57,6 @@ export const Navbar = () => {
             </Container>
         </Navbar>
   
-    )
+    );
 
-}
+};
