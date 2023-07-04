@@ -19,7 +19,7 @@ export const Banner = () => {
             tick();
 
         },delta)
-        return () => { clearImmediate(ticker)};
+        return () => { clearInterval(ticker)};
     },[text])
 
     const tick = () =>{
@@ -50,7 +50,7 @@ export const Banner = () => {
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
                         <span className="tagline">Welcome To YTNB</span>
-                        <h1> {'A web app for note-taking'}<span className="wrap">{text}</span></h1>
+                        <h1> {"Note Takin'Web App"}<span className="wrap">{text}</span></h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         <button OnClick={() => console.log('connect')}>Let's Connect <ArrowRightCircle size={24}/></button>
                     </Col>
