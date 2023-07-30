@@ -1,10 +1,21 @@
-import React, {useState} from 'react';
+import React, {useState,useEffect} from 'react';
 import './YourNotes.css';
+import firebase from 'firebase/app';
+import io from 'socket.io-client';
+
+const socket=io('https://localhost:5000');
+
 const YourNotes = () => {
 
     const [notes,setNotes]=useState([]);
     const [newNote , setNewNote]=useState('');
     const [editingIndex,setEditingIndex] = useState(-1);
+
+    useEffect(()=>{
+        socket.on('noteUpdate',(updatedNotes)=>{
+            setNotes(updatedNotes);
+        });
+    });
 
     const handleNoteChange=(e) =>{
         setNewNote(e.target.value);
@@ -42,6 +53,10 @@ const YourNotes = () => {
         setNotes(updatedNotes);
         setEditingIndex(-1);
     };
+
+    useEffect(()=>{
+        socket.emit('noteUpdate',notes);
+    },[notes]);
 
     return(
         <div className='your-notes-container'>
