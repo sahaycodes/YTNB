@@ -10,7 +10,7 @@
 👤 **Shreya S Sahay**
 
 * Github: [@sahaycodes](https://github.com/sahaycodes)
-* LinkedIn: [@Shreya S Sahay](https://linkedin.com/in/Shreya S Sahay)
+* LinkedIn: [@Shreya S Sahay](https://www.linkedin.com/in/shreya-s-sahay-706490238?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B2Sl64nFkRqmGpVEINlQ8DQ%3D%3D)
 
 ## Show your support
 
