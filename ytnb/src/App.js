@@ -9,6 +9,7 @@ import {YourNotes} from './components/YourNotes';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { firebaseConfig } from './firebaseConfig';
 import { initializeApp } from 'firebase/app';
+import { StudyRoom } from './components/StudyRoom.js';
 
 const app=initializeApp(firebaseConfig);
 
@@ -18,6 +19,7 @@ function App() {
       <Navbar1/>
       <Banner />
       <YourNotes />
+      <StudyRoom />
       <Library />
      
     </div>
