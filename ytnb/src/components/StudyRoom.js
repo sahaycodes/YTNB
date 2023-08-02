@@ -38,7 +38,7 @@ const StudyRoom =({roomCode}) => {
             }
         };
 
-    });
+    },[]);
 
     const handleReceiveSignal = (signal) => {
         //set up peer connection
@@ -63,7 +63,7 @@ const StudyRoom =({roomCode}) => {
     };
     const sendData=(data)=>{
         if(dataChannelRef.current.readyState==='open'){
-            dataChannelRef.cyrrent.send(JSON.stringify(data));
+            dataChannelRef.current.send(JSON.stringify(data));
         }else{
             console.warn('Data channel is not open yet.Cannot send data.');
         }
