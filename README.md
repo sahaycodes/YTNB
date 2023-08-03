@@ -33,11 +33,14 @@
 
 Making the UI/UX better 
 Work in Progress
+
+
 Screenshots 
 
 
-![Screenshot 2023-07-31 001436](https://github.com/sahaycodes/YTNB/assets/99585576/9e3049ff-afb5-420c-a931-eed020160d5c)
-![Screenshot 2023-07-31 001555](https://github.com/sahaycodes/YTNB/assets/99585576/88239f0d-8bc9-43a0-991e-063858bfeae3)
+![Screenshot (84)](https://github.com/sahaycodes/YTNB/assets/99585576/f618b99f-a0d2-45e9-97d7-01cadc0bafc1)
+![Screenshot 2023-07-31 001555](https://github.com/sahaycodes/YTNB/assets/99585576/4b85ff20-f40f-4b5e-b251-38871d84b589)
+
 
 
 
