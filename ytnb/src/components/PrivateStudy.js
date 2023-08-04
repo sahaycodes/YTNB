@@ -1,10 +1,11 @@
 import React, {useState} from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+
 
 
 const PrivateStudy = () => {
     const [roomCode,setRoomCode] = useState('');
-    const history = useHistory();
+    const history = useNavigate();
 
     const generateRoomCode = () => {
         //generating a random and unique room code 

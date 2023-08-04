@@ -19,8 +19,10 @@ function App() {
     <Router>
       <div className="App">
         <Navbar1 />
-          <Route path="/" exact component={PrivateStudy} />
-          <Route path="/video-chat/:roomCode" component={StudyRoom} />
+        <Routes>
+          <Route path="/" exact component={<PrivateStudy />} />
+          <Route path="/video-chat/:roomCode" component={<StudyRoom/>} />
+          </Routes>
             <Banner />
             <YourNotes />
             <StudyRoom />
