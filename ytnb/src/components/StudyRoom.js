@@ -1,5 +1,5 @@
 import React, {useEffect , useRef , useState} from 'react';
-
+import './StudyRoom.css';
 import Webcam from 'react-webcam';
 import SimplePeer from 'simple-peer';
 
